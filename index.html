@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar w-screen h-12 bg-red-600 text-base flex items-center  px-32 justify-between">
+            <div class="navbar__contact text-white flex gap-6 h-full items-center">
+                <p class="flex items-center"><i class="fas fa-building mr-3"></i><span class="font-bold mr-2">Contact:
+                    </span>Mirpur, Kushtia, Bangladesh, 7030</p>
+                <p class="flex items-center"><i class="fas fa-phone mr-3"></i><span class="font-bold mr-2">Call Us:
+                    </span>+880 1780974765</p>
+            </div>
+            <div class="navbar__social flex gap-2 text-white rounded-full border-none">
+                <a href="#"><i class="fab fa-facebook-square rounded-full text-2xl hover:bg-black"></i></a>
+                <a href="#"><i class="fab fa-twitter-square rounded-full text-2xl hover:bg-black"></i></a>
+                <a href="#"><i class="fab fa-youtube-square rounded-full text-2xl hover:bg-black"></i></a>
+                <a href="#"><i class="fab fa-whatsapp-square rounded-full text-2xl hover:bg-black"></i></a>
+                <a href="#"><i class="fab fa-instagram-square rounded-full text-2xl hover:bg-black"></i></a>
+            </div>
+        </nav>
+        <section class="logo_header h-24 w-screen bg-white flex items-center px-32 justify-between">
+            <div class="logo_header__logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <div
+                class="logo_header__nav flex justify-between h-full items-center gap-6 text-xl font-medium text-gray-700">
+                <a href="" class="border-b-4 border-transparent hover:border-red-600">Home</a>
+                <a href="" class="border-b-4 border-transparent hover:border-red-600">About Us</a>
+                <a href="" class="border-b-4 border-transparent hover:border-red-600">Campaign</a>
+                <a href="" class="border-b-4 border-transparent hover:border-red-600">Pages</a>
+                <a href="" class="border-b-4 border-transparent hover:border-red-600">Blog</a>
+                <a href="" class="border-b-4 border-transparent hover:border-red-600">Contact</a>
+            </div>
+        </section>
+    </header>
+    <section class="hero-slider">
+        <div id="categorySlider" class="slider h-screen w-screen">
+            <div class="slider__viewport">
+                <ul class="slider__slides slide-list js-slide-list" style="left: -100%">
+                    <li class="slide-list__item js-slide-list-item" data-slide-index="0">
+                        <div class="slide-list__content-area slide_1">
+                            <div class="slider_text text-white text-left">
+                                <h3 class="text-4xl font-medium mb-3">Donate blood,save life !</h3>
+                                <h2 class="text-6xl uppercase font-bold mb-4">
+                                    YOUR BLOOD
+                                    <br>
+                                    CAN BRING SMILE
+                                    <br>
+                                    IN OTHER PERSON FACE
+                                </h2>
+                                <div class="slider_btn mt-10 flex gap-3">
+                                    <a href="#"
+                                        class="donate_btn py-4 px-16 rounded bg-red-600 text-2xl hover:bg-red-500">Donate
+                                        Blood</a>
+                                    <a href="#"
+                                        class="donate_btn py-4 px-16 rounded bg-gray-900 text-2xl hover:bg-gray-800">Recieve
+                                        Blood</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide-list__item js-slide-list-item" data-slide-index="0">
+                        <div class="slide-list__content-area slide_2">
+                            <div class="slider_text text-white text-left">
+                                <h3 class="text-4xl font-medium mb-3">Donate blood,save life !</h3>
+                                <h2 class="text-6xl uppercase font-bold mb-4">
+                                    DONATE BLOOD
+                                    <br>
+                                    AND INSPIRES OTHERS.
+                                </h2>
+                                <div class="slider_btn mt-10 flex gap-3">
+                                    <a href="#"
+                                        class="donate_btn py-4 px-16 rounded bg-red-600 text-2xl hover:bg-red-500">Donate
+                                        Blood</a>
+                                    <a href="#"
+                                        class="donate_btn py-4 px-16 rounded bg-gray-900 text-2xl hover:bg-gray-800">Recieve
+                                        Blood</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="slider__controls text-white">
+                <button type="button" data-direction="prev"
+                    class="js-arrow-button slider__button slider__button--prev p-2 text-6xl hover:text-red-600"><i
+                        class="fa fa-angle-left"></i></button>
+                <button type="button" data-direction="next"
+                    class="js-arrow-button slider__button slider__button--next p-2 text-6xl hover:text-red-600"><i
+                        class="fa fa-angle-right"></i></button>
+            </div>
+        </div>
+
+
+    </section>
+</body>
+
+</html>
