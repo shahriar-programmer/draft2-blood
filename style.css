@@ -5,6 +5,7 @@
 }
 
   .slider {
+    height: 100vh;
     color: #444;
     position: relative;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
@@ -95,6 +96,9 @@
       position: absolute;
       top: 25%;
       left: 10%;
+    }
+    .slider{
+      height: 50vh;
     }
   }
 
