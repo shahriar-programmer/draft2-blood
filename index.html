@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blood Donate</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
@@ -12,10 +12,11 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar w-screen h-12 bg-red-600 text-base flex items-center  px-32 justify-between">
-            <div class="navbar__contact text-white flex gap-6 h-full items-center">
-                <p class="flex items-center"><i class="fas fa-building mr-3"></i><span class="font-bold mr-2">Contact:
+    <section class="main_content h-screen">
+        <nav
+            class="navbar bg-red-600 text-base flex items-center px-10 lg:px-32 justify-between flex-col lg:flex-row gap-2 py-4">
+            <div class="navbar__contact text-white flex gap-2 lg:gap-6 h-full items-center flex-col lg:flex-row">
+                <p class="text-center"><i class="fas fa-building mr-3"></i><span class="font-bold lg:mr-2">Contact:
                     </span>Mirpur, Kushtia, Bangladesh, 7030</p>
                 <p class="flex items-center"><i class="fas fa-phone mr-3"></i><span class="font-bold mr-2">Call Us:
                     </span>+880 1780974765</p>
@@ -28,80 +29,120 @@
                 <a href="#"><i class="fab fa-instagram-square rounded-full text-2xl hover:bg-black"></i></a>
             </div>
         </nav>
-        <section class="logo_header h-24 w-screen bg-white flex items-center px-32 justify-between">
+        <section class="logo_header flex h-24 bg-white items-center px-8 md:px-16 lg:px-32 justify-between">
+            <span class="menu block lg:hidden text-4xl cursor-pointer justify-self-start"
+                onclick="openNav()">&#9776;</span>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#" class="navbar__item mr-5 hover:text-red-500 hover:font-bold"><i
+                        class="fa fa-home text-2xl mr-2"></i> Home</a>
+                <a href="#" class="navbar__item mr-5 hover:text-red-500 hover:font-bold"><i
+                        class="fa fa-list text-2xl mr-2"></i> Donor List</a>
+                <a href="#" class="navbar__item mr-5 hover:text-red-500 hover:font-bold"><i
+                        class="fa fa-book text-2xl mr-2"></i> Blog</a>
+                <a href="#" class="navbar__item mr-5 hover:text-red-500 hover:font-bold"><i
+                        class="fa fa-image text-2xl mr-2"></i> Gallery</a>
+                <a href="#" class="navbar__item mr-5 hover:text-red-500 hover:font-bold"><i
+                        class="fa fa-user text-2xl mr-2"></i> About Us</a>
+                <a href="#" class="navbar__item mr-5 hover:text-red-500 hover:font-bold"><i
+                        class="fa fa-envelope text-2xl mr-2"></i> Contact</a>
+                <a href="#" class="navbar__item mr-5 hover:text-red-500 hover:font-bold"><i
+                        class="fa fa-door-open text-2xl mr-2"></i> Login</a>
+            </div>
             <div class="logo_header__logo">
                 <img src="img/logo.png" alt="Logo">
             </div>
             <div
-                class="logo_header__nav flex justify-between h-full items-center gap-6 text-xl font-medium text-gray-700">
+                class="logo_header__nav hidden lg:flex justify-between h-full items-center gap-6 text-xl font-medium text-gray-700">
                 <a href="" class="border-b-4 border-transparent hover:border-red-600">Home</a>
-                <a href="" class="border-b-4 border-transparent hover:border-red-600">About Us</a>
-                <a href="" class="border-b-4 border-transparent hover:border-red-600">Campaign</a>
-                <a href="" class="border-b-4 border-transparent hover:border-red-600">Pages</a>
+                <a href="" class="border-b-4 border-transparent hover:border-red-600">Donor List</a>
                 <a href="" class="border-b-4 border-transparent hover:border-red-600">Blog</a>
+                <a href="" class="border-b-4 border-transparent hover:border-red-600">Gallery</a>
+                <a href="" class="border-b-4 border-transparent hover:border-red-600">Blog</a>
+                <a href="" class="border-b-4 border-transparent hover:border-red-600">About Us</a>
                 <a href="" class="border-b-4 border-transparent hover:border-red-600">Contact</a>
+                <a href="" class="border-b-4 border-transparent hover:border-red-600">Login</a>
             </div>
         </section>
-    </header>
-    <section class="hero-slider">
-        <div id="categorySlider" class="slider h-screen w-screen">
-            <div class="slider__viewport">
-                <ul class="slider__slides slide-list js-slide-list" style="left: -100%">
-                    <li class="slide-list__item js-slide-list-item" data-slide-index="0">
-                        <div class="slide-list__content-area slide_1">
-                            <div class="slider_text text-white text-left">
-                                <h3 class="text-4xl font-medium mb-3">Donate blood,save life !</h3>
-                                <h2 class="text-6xl uppercase font-bold mb-4">
-                                    YOUR BLOOD
-                                    <br>
-                                    CAN BRING SMILE
-                                    <br>
-                                    IN OTHER PERSON FACE
-                                </h2>
-                                <div class="slider_btn mt-10 flex gap-3">
-                                    <a href="#"
-                                        class="donate_btn py-4 px-16 rounded bg-red-600 text-2xl hover:bg-red-500">Donate
-                                        Blood</a>
-                                    <a href="#"
-                                        class="donate_btn py-4 px-16 rounded bg-gray-900 text-2xl hover:bg-gray-800">Recieve
-                                        Blood</a>
+        <section class="hero-slider">
+            <div id="categorySlider" class="slider h-screen">
+                <div class="slider__viewport">
+                    <ul class="slider__slides slide-list js-slide-list" style="left: -100%">
+                        <li class="slide-list__item js-slide-list-item" data-slide-index="0">
+                            <div class="slide-list__content-area slide_1 overflow-hidden w-full">
+                                <div class="slider_text text-white text-left">
+                                    <h3 class="text-4xl font-medium mb-3 hidden lg:block">Donate blood,save life !</h3>
+                                    <p class="text-2xl sm:text-4xl lg:text-5xl uppercase font-bold mb-4">
+                                        YOUR BLOOD
+                                        <br />
+                                        CAN BRING SMILE
+                                        <br />
+                                        IN OTHER PERSON FACE
+                                    </p>
+                                    <div class="slider_btn mt-10 flex flex-col md:flex-row gap-3 items-start">
+                                        <a href="#"
+                                            class="donate_btn py-4 px-10 lg:px-16 rounded bg-red-600 text-xl lg:text-2xl hover:bg-red-500 w-full text-center">Donate
+                                            Blood</a>
+                                        <a href="#"
+                                            class="donate_btn py-4 px-10 lg:px-16 rounded bg-gray-900 text-xl lg:text-2xl hover:bg-gray-800 w-full text-center">Recieve
+                                            Blood</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="slide-list__item js-slide-list-item" data-slide-index="0">
-                        <div class="slide-list__content-area slide_2">
-                            <div class="slider_text text-white text-left">
-                                <h3 class="text-4xl font-medium mb-3">Donate blood,save life !</h3>
-                                <h2 class="text-6xl uppercase font-bold mb-4">
-                                    DONATE BLOOD
-                                    <br>
-                                    AND INSPIRES OTHERS.
-                                </h2>
-                                <div class="slider_btn mt-10 flex gap-3">
-                                    <a href="#"
-                                        class="donate_btn py-4 px-16 rounded bg-red-600 text-2xl hover:bg-red-500">Donate
-                                        Blood</a>
-                                    <a href="#"
-                                        class="donate_btn py-4 px-16 rounded bg-gray-900 text-2xl hover:bg-gray-800">Recieve
-                                        Blood</a>
+                        </li>
+                        <li class="slide-list__item js-slide-list-item" data-slide-index="0">
+                            <div class="slide-list__content-area slide_2 overflow-hidden w-full">
+                                <div class="slider_text text-white text-left">
+                                    <h3 class="hidden lg:block text-4xl font-medium mb-3">Donate blood,save life !</h3>
+                                    <h2 class="text-2xl sm:text-4xl lg:text-5xl uppercase font-bold mb-4">
+                                        DONATE BLOOD
+                                        <br>
+                                        AND INSPIRES OTHERS.
+                                    </h2>
+                                    <div class="slider_btn mt-10 flex flex-col md:flex-row gap-3 items-start">
+                                        <a href="#"
+                                            class="donate_btn py-4 px-10 lg:px-16 rounded bg-red-600 text-xl lg:text-2xl hover:bg-red-500 w-full text-center">Donate
+                                            Blood</a>
+                                        <a href="#"
+                                            class="donate_btn py-4 px-10 lg:px-16 rounded bg-gray-900 text-xl lg:text-2xl hover:bg-gray-800 w-full text-center">Recieve
+                                            Blood</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slider__controls text-white">
+                    <button type="button" data-direction="prev"
+                        class="js-arrow-button slider__button slider__button--prev p-2 text-6xl hover:text-red-600"><i
+                            class="fa fa-angle-left"></i></button>
+                    <button type="button" data-direction="next"
+                        class="js-arrow-button slider__button slider__button--next p-2 text-6xl hover:text-red-600"><i
+                            class="fa fa-angle-right"></i></button>
+                </div>
             </div>
-            <div class="slider__controls text-white">
-                <button type="button" data-direction="prev"
-                    class="js-arrow-button slider__button slider__button--prev p-2 text-6xl hover:text-red-600"><i
-                        class="fa fa-angle-left"></i></button>
-                <button type="button" data-direction="next"
-                    class="js-arrow-button slider__button slider__button--next p-2 text-6xl hover:text-red-600"><i
-                        class="fa fa-angle-right"></i></button>
+        </section>
+        <section class="text-gray-700 body-font">
+            <div class="container mx-auto flex px-5 py-24 lg:flex-row flex-col-reverse items-center gap-6 lg:gap-3">
+                <div
+                    class="about_us__text_div lg:flex-grow lg:w-1/2 lg:pr-24 lg:pr-16 flex flex-col lg:items-start lg:text-left mb-16 lg:mb-0 items-center text-center shadow-xl hover:shadow-2xl p-10 gap-2">
+                    <h1 class="text-5xl font-medium">Who We Are?</h1>
+                    <hr class="border-red-600 border-2 w-16">
+                    <p class="tracking-wider">Blood Buddies is for public donation center with blood donation members in
+                        the changing health care system.</p>
+                    <ul class="font-sans border-red-100">
+                        <li class="">Specialist blood donors and clinical supervision.</li>
+                        <li class="">Increasing communication with our members.</li>
+                        <li class="">High quality assessment, diagnosis and treatment.</li>
+                        <li class="">Examine critically to ensure alignment.</li>
+                        <li class="">The extra care of a multi-disciplinary team.</li>
+                    </ul>
+                </div>
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ml-6">
+                    <img class="object-cover object-center rounded shadow-2xl" alt="hero" src="img/slide-3.jpg">
+                </div>
             </div>
-        </div>
-
-
+        </section>
     </section>
 </body>
 
